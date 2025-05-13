@@ -17,7 +17,8 @@ const __dirname = path.dirname(__filename);
 const uploadsDir = path.join(__dirname, '../../uploads/memes');
 
 // Get server base URL from environment variables or use default
-const SERVER_BASE_URL = process.env.SERVER_BASE_URL || 'http://localhost:8080';
+// IMPORTANT: Always use the deployed URL for production
+const SERVER_BASE_URL = 'https://igh-backend.onrender.com';
 
 const router = express.Router();
 
